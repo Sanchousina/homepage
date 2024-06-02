@@ -318,3 +318,14 @@ body {
   max-height: 100%;
   object-fit: cover;
 }
+
+.final_sign_off {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.fun_fact {
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
