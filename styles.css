@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -27,7 +35,7 @@ body {
 .fh {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .fv {
@@ -91,7 +99,7 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .contact-info__block--center {
@@ -127,8 +135,8 @@ body {
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
@@ -160,6 +168,12 @@ body {
 .intro_text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .skills__header {
@@ -238,6 +252,10 @@ body {
   margin-bottom: 20px;
 }
 
+.additional-info__education-university {
+  padding-bottom: 15px;
+}
+
 .additional-info__education-university-durability {
   color: var(--durability-text-color);
   text-align: left;
@@ -267,4 +285,47 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.projects__header {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.projects__project-description {
+  margin-bottom: 15px;
+}
+
+.projects__project-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.project__image {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.project__image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.final_sign_off {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.fun_fact {
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
