@@ -162,6 +162,12 @@ body {
   text-align: justify;
 }
 
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
 .skills__header {
   color: var(--secondary-text-color);
   text-align: center;
